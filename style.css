@@ -17,15 +17,21 @@ body{
 }
 
 #header{
-    background-color: rgba(139, 53, 53, 0.742); /* Color más oscuro para mejor contraste */
+    background-color: rgba(139, 53, 53, 0.742);
     height: 10vh;
     width: 100vw;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    flex
 }
 
-.header{
-}
+
 
 
 /*codigop que hace parte unicamente aa la pagina de ingresar cuenta*/
