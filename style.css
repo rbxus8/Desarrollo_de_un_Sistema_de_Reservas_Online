@@ -2,7 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&display=swap');
 
 
+:root {
+    /* Tonos principales */
+    --azul-oscuro:     #0f172a; /* Azul muy oscuro, elegante (ideal para footer o fondo principal) */
+    --azul-medianoche: #1e3a8a; /* Azul profundo para encabezados o navbar */
+    --azul:            #2563eb; /* Azul vibrante, para botones principales */
+    --azul-cielo:      #3b82f6; /* Azul claro, ideal para íconos, hover, o links */
+    
+    /* Tonos suaves para fondo y detalles */
+    --azul-suave:      #e0f2fe; /* Azul muy claro, para fondo general o inputs */
+    --azul-niebla:     #bfdbfe; /* Azul pálido, útil para tarjetas o secciones suaves */
+    
+    /* Acentos y complementarios */
+    --gris-claro:      #f8fafc; /* Fondo blanco azulado, elegante */
+    --gris-azulado:    |; /* Texto secundario o íconos apagados */
+    --blanco:          #ffffff; /* Texto o fondo limpio */
+  }
 
+  /*Elemento UI	Color sugerido
+Body fondo	--azul-suave o --gris-claro
+Header/Navbar	--azul-medianoche o --azul-oscuro
+Botones	--azul con hover --azul-cielo
+Texto principal	--azul-oscuro o --gris-azulado
+Links	--azul-cielo
+Hover fondo	--azul-niebla
+Tarjetas/Inputs	--azul-niebla o --gris-claro
+Footer	--azul-oscuro con texto --blanco*/
+  
 
 *{
     margin: 0;
@@ -16,9 +42,14 @@ body{
     background-color: rgb(61, 66, 66);  /*color de todo el fondo*/
 }
 
+input{
+    background-color: #e0f2fe;
+}
+
 #header{
-    background-color: rgba(139, 53, 53, 0.742);
+    background-color: #1e3a8a;
     height: 10vh;
+    color: #ffffff;
 }
 
 .menu_hamb{
@@ -41,7 +72,8 @@ body{
 }
 
 .ul_links{
-    width: 100%;
+    width: 30%;
+    left: 70%;
     position: absolute;
     background-color: rgb(195, 255, 127);
     top: 10vh;
@@ -50,11 +82,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    left: 0;
     height: 0;
     overflow: hidden;
-
 }
+
+
 
 @media (min-width: 768px){
     .labe_hamb{
@@ -75,8 +107,66 @@ body{
 
 
 
-/*codigop que hace parte unicamente aa la pagina de ingresar cuenta*/
+/*codigo que hace parte de la pagina de inicio*/
 
+.cuerpo_inicio{
+    background-image: url(img/image_fondo.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    color: #ffffff;
+    row-gap: 1rem;
+}
 
+.btn_entrar{
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
 
-/*qui termina el codigo que pertenece unimente a la pagina para ingreasr cuenta o inicio*/
+.sesion_ops{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 6rem;
+
+}
+
+.sesion_ops a{
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.cuerpo_inicio input{
+    padding: 0.6em 2em;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cuerpo_form form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem 0.5rem;
+    flex-direction: column;
+}
+
+/**codigo que hace parte de la pagina de registro*/
+
+/*codigo que hace parte de la pagina del footer*/
+footer{
+background-color: #0f172a;
+height: 10vh;
+}
