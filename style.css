@@ -13,21 +13,63 @@
 }
 
 body{
-    background-color: azure;  /*color de todo el fondo*/
+    background-color: rgb(61, 66, 66);  /*color de todo el fondo*/
 }
 
 #header{
     background-color: rgba(139, 53, 53, 0.742);
     height: 10vh;
-    width: 100vw;
+}
+
+.menu_hamb{
+    display: none;
+}
+.menu_hamb:checked + .ul_links{
+    height: calc(80vh - 30vh);
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
-    box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 10;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+}
+
+.ul_links{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(195, 255, 127);
+    top: 10vh;
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+
+}
+
+@media (min-width: 768px){
+    .labe_hamb{
+        display: none;
+
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+
 }
 
 
