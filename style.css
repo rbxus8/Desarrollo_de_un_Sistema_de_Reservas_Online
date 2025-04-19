@@ -246,6 +246,7 @@ input {
     justify-content: center;
     padding: 0em 13em;
     gap: 3rem;
+    overflow-y: scroll;
 
 }
 .formulario_reg div{
@@ -254,6 +255,7 @@ input {
     align-items: center;
     gap: 1rem;
     width: 100%;
+    flex-wrap: wrap;
 }
 .formulario_reg  form {
     max-width: 700px;
@@ -262,7 +264,6 @@ background-color:rgba(255, 0, 0, 0) ;
     flex-direction: column;
     width: 100%;
     gap: 0.5rem;
-    flex-wrap: wrap;
 }
 
 .formulario_reg input {
@@ -272,6 +273,7 @@ background-color:rgba(255, 0, 0, 0) ;
     border-color: black;
     margin-bottom: 1rem;
     transition: all 0.3s ease-in-out;
+    min-width: 200px;
 }
 .formulario_reg select {
     padding: 0.6em 2em;
@@ -280,6 +282,7 @@ background-color:rgba(255, 0, 0, 0) ;
     border-color: black;
     margin-bottom: 1rem;
     transition: all 0.3s ease-in-out;
+    min-width: 200px;
 }
 
 .btn {
