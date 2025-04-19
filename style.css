@@ -225,7 +225,7 @@ input {
     flex-direction: column;
 }
 
-/**codigo que hace parte de la pagina de registro*/
+/**codigo que hace parte de la pagina de principal*/
 
 .portada {
     background-image: url(img/foto_bogota.jpg);
@@ -233,6 +233,16 @@ input {
     width: 100%;
     height: 60vh;
 }
+
+
+/**codigo que hace parte de la pagina de registrarse*/
+
+.formulario{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
 
 /*codigo que hace parte de la pagina del footer*/
 footer {
