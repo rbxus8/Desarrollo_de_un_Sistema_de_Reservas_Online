@@ -237,11 +237,63 @@ input {
 
 /**codigo que hace parte de la pagina de registrarse*/
 
-.formulario{
-    width: 100%;
-    height: 100vh;
+.formulario_reg{
+    height: 120vh;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 13em;
+    gap: 3rem;
+
 }
+.formulario_reg div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.formulario_reg  form {
+    max-width: 700px;
+background-color:rgba(255, 0, 0, 0) ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.formulario_reg input {
+    padding: 0.6em 2em;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.formulario_reg select {
+    padding: 0.6em 2em;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 
 /*codigo que hace parte de la pagina del footer*/

@@ -17,7 +17,7 @@
       </section>
     </header>
     <div class="espacio"></div>
-    <section class="formulario">
+    <section class="formulario_reg">
       <h1>CREAR PERFIL</h1>
       <form action="post" method="post">
         <select name="Tratamiento" id="tratamiento_reg">
@@ -25,7 +25,9 @@
           <option value="valor2">Sra</option>
           <option value="valor3">Sr</option>
         </select>
+
         <input type="text" name="nombre_reg" placeholder="Nombre*" required />
+
         <input
           type="text"
           name="apellido_reg"
@@ -72,6 +74,14 @@
           placeholder="Confirmar contraseña*"
           required
         />
+        <div>
+          <input type="checkbox" name="terminos_reg" id="terminos_reg" />
+          <label for="terminos_reg">Acepto los terminos y condiciones</label>
+        </div>
+        <div class="boton_reg">
+          <button class="btn">BACK</button>
+          <button class="btn" type="submit">REGISTRARSE</button>
+        </div>
       </form>
     </section>
   </body>
