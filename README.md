@@ -2,6 +2,35 @@
 
 Este proyecto consiste en el desarrollo de un sistema de reservas online, ideal para negocios o servicios que requieren gestión de citas o reservas a través de internet. El sistema está diseñado para facilitar tanto a los usuarios como a los administradores la creación, modificación y gestión de reservas de manera eficiente y segura.
 
+👤 Usuarios / Personal
+Login y logout del administrador
+
+Registro de personal (recepcionista, gerente)
+
+🛏️ Habitaciones
+Crear, editar, eliminar habitaciones
+
+Ver disponibilidad (estado: disponible / reservada / en limpieza)
+
+Categorías: estándar, suite, doble, etc.
+
+📅 Reservas
+Registrar reserva con nombre del cliente, fechas, habitación
+
+Listado de reservas por día, semana o mes
+
+Cancelar reservas
+
+👥 Clientes
+Registrar datos del huésped (nombre, correo, documento)
+
+Historial de reservas
+
+💰 Pagos (opcional)
+Registrar pagos (efectivo, tarjeta, etc.)
+
+Ver total recaudado por fecha
+
 ## Características principales
 
 - **Registro y autenticación de usuarios**  
