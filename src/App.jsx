@@ -1,18 +1,17 @@
 import './index.css';
 import React from 'react';
-import Header from './header';
-
-
+import Header from './header.jsx';
 
 function App() {
-
-
   return (
-    <div className='container'>
-      <h1>Bienvenido a mi aplicación</h1>
-      <MyButton />
-    </div> 
-  ) 
+    <>
+      <Header />
+      <div className='container'>
+        <h1>Bienvenido a mi aplicación</h1>
+        <MyButton />
+      </div>
+    </>
+  );
 }
 
 function MyButton() {
@@ -23,4 +22,4 @@ function MyButton() {
   );
 }
 
-export default App
+export default App;
