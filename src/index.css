@@ -1,3 +1,4 @@
+/* ====== Variables Globales ====== */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,76 +14,73 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+/* ====== Reset general ====== */
 body {
   margin: 0;
-  display: flex;
-  width: 100vw;
+  padding: 0;
   min-width: 320px;
   height: 100vh;
-  background-color: #f253df;
-  justify-content: center;
 }
 
-main{
+/* ====== Estilo principal del Login ====== */
+.main_login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  width: 100vw;
-  background-color: #535bf2;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(135deg, #f253df, #7a52f2);
 }
 
-.container{
-  background-color: #1a1a1a;
+/* ====== Formulario Login ====== */
+.main_form {
   width: 90%;
-  text-align: center;
-}
-
-
-/*=============login==========*/
-.main_login{
-  align-items: center;
-  background-color: #1a1a1a;
-  justify-content: center;
-}
-
-.main_form{
-  width:40%; 
-  height: 150px;
-  background-color: #ffffff2b;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 2em;
-  border-radius: 10px 20% ;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
-  justify-content: center;
 }
 
+/* ====== Inputs y Select ====== */
+input, select {
+  width: 100%;
+  padding: 0.6em;
+  border-radius: 6px;
+  border: none;
+  font-size: 1em;
+}
 
-/*===============btn================*/
+select {
+  background-color: rgba(240, 248, 255, 0.8);
+  color: #1a1a1a;
+}
 
+/* ====== Botón ====== */
 .btn {
-  padding: 0.5em;
-  border-radius: 50px;
-  width: 80px;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
+  padding: 0.6em;
+  border-radius: 30px;
+  width: 100%;
+  background-color: white;
   color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-/*==================input=====================*/
-
-input{
-  padding: 0.5em;
+.btn:hover {
+  background-color: #e0e0e0;
 }
 
-/*======================select==========================*/
-
-select{
-  background-color: rgba(240, 248, 255, 0.754);
-  color: #1a1a1a;
-  padding: 0.3em;
-  border-radius: 4px;
+/* ====== Responsive extra (opcional) ====== */
+@media (max-width: 480px) {
+  .main_form {
+    padding: 1.5em;
+    gap: 12px;
+  }
 }

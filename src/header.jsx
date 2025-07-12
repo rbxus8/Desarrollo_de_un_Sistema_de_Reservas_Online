@@ -1,29 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
-  // Estado para identificar qué link está siendo "hovered"
-  const [hoveredLink, setHoveredLink] = useState(null);
-
-  const navLinks = ["Inicio", "Reservas", "Habitaciones", "Clientes"];
+  const location = useLocation();
 
   return (
     <header style={styles.header}>
       <h1 style={styles.title}>Hotel'Julis Admin</h1>
       <nav style={styles.nav}>
-        {navLinks.map((text, index) => (
-          <a
-            key={index}
-            href="#"
-            onMouseEnter={() => setHoveredLink(index)}
-            onMouseLeave={() => setHoveredLink(null)}
-            style={{
-              ...styles.link,
-              color: hoveredLink === index ? "#ffcc00" : "white",
-            }}
-          >
-            {text}
-          </a>
-        ))}
+        <ul style={styles.navList}>
+          {location.pathname !== "/login" ? (
+            <>
+              <li><Link to="/" style={styles.link}>Inicio</Link></li>
+              <li><Link to="/perfil" style={styles.link}>Perfil</Link></li>
+              <li><Link to="/reservas" style={styles.link}>Reservas</Link></li>
+              <li><Link to="/servicios" style={styles.link}>Servicios</Link></li>
+            </>
+          ) : (
+            <li><Link to="/ayuda" style={styles.link}>¿Necesitas ayuda?</Link></li>
+          )}
+        </ul>
       </nav>
     </header>
   );
@@ -46,7 +42,15 @@ const styles = {
     display: "flex",
     gap: "1rem",
   },
+  navList: {
+    display: "flex",
+    gap: "1rem",
+    listStyle: "none",
+    margin: 0,
+    padding: 0,
+  },
   link: {
+    color: "white",
     textDecoration: "none",
     fontWeight: "bold",
     transition: "color 0.2s ease",
