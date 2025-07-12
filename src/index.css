@@ -13,14 +13,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body, #root {
+
+body {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  width: 100vw;
+  min-width: 320px;
+  height: 100vh;
+  background-color: #f253df;
+  justify-content: center;
 }
 
-
+main{
+  height: 100vh;
+  width: 100vw;
+  background-color: #535bf2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
 .container{
   background-color: #1a1a1a;
@@ -28,13 +39,50 @@ html, body, #root {
   text-align: center;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  width: 100vw;
-  min-width: 320px;
-  height: 100vh;
-  background-color: #535bf2;
+
+/*=============login==========*/
+.main_login{
+  align-items: center;
+  background-color: #1a1a1a;
   justify-content: center;
+}
+
+.main_form{
+  width:40%; 
+  height: 150px;
+  background-color: #ffffff2b;
+  padding: 2em;
+  border-radius: 10px 20% ;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*===============btn================*/
+
+.btn {
+  padding: 0.5em;
+  border-radius: 50px;
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  color: #1a1a1a;
+}
+
+/*==================input=====================*/
+
+input{
+  padding: 0.5em;
+}
+
+/*======================select==========================*/
+
+select{
+  background-color: rgba(240, 248, 255, 0.754);
+  color: #1a1a1a;
+  padding: 0.3em;
+  border-radius: 4px;
 }

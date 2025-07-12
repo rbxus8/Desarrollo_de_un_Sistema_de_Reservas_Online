@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Header() {
   // Estado para identificar qué link está siendo "hovered"
   const [hoveredLink, setHoveredLink] = useState(null);
 
-  const navLinks = ['Inicio', 'Reservas', 'Habitaciones', 'Clientes'];
+  const navLinks = ["Inicio", "Reservas", "Habitaciones", "Clientes"];
 
   return (
     <header style={styles.header}>
@@ -18,7 +18,7 @@ function Header() {
             onMouseLeave={() => setHoveredLink(null)}
             style={{
               ...styles.link,
-              color: hoveredLink === index ? '#ffcc00' : 'white',
+              color: hoveredLink === index ? "#ffcc00" : "white",
             }}
           >
             {text}
@@ -31,25 +31,25 @@ function Header() {
 
 const styles = {
   header: {
-    backgroundColor: '#004080',
-    color: 'white',
-    padding: '1rem 2rem',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    backgroundColor: "#004080",
+    color: "white",
+    padding: "1rem 2rem",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   title: {
     margin: 0,
-    fontSize: '1.5rem',
+    fontSize: "1.5rem",
   },
   nav: {
-    display: 'flex',
-    gap: '1rem',
+    display: "flex",
+    gap: "1rem",
   },
   link: {
-    textDecoration: 'none',
-    fontWeight: 'bold',
-    transition: 'color 0.2s ease',
+    textDecoration: "none",
+    fontWeight: "bold",
+    transition: "color 0.2s ease",
   },
 };
 
