@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <Header rol={rol} />
+      <header rol={rol} />
       <div className="container">
         <h1>Bienvenido a mi aplicación como {rol}</h1>
         <MyButton />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "./Header"; // ✅ Asegúrate que la ruta sea correcta
+import Header from "./header"; // ✅ Asegúrate que la ruta sea correcta
 
 function Login({ onLogin }) {
   const [rolSeleccionado, setRolSeleccionado] = useState("empleador");
