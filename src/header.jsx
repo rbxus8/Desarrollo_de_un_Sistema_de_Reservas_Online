@@ -1,23 +1,34 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-function Header() {
+function Header({ rol }) {
   const location = useLocation();
+  const path = location.pathname;
 
   return (
     <header style={styles.header}>
       <h1 style={styles.title}>Hotel'Julis Admin</h1>
-      <nav style={styles.nav}>
+
+      <nav>
         <ul style={styles.navList}>
-          {location.pathname !== "/login" ? (
-            <>
-              <li><Link to="/" style={styles.link}>Inicio</Link></li>
-              <li><Link to="/perfil" style={styles.link}>Perfil</Link></li>
-              <li><Link to="/reservas" style={styles.link}>Reservas</Link></li>
-              <li><Link to="/servicios" style={styles.link}>Servicios</Link></li>
-            </>
+          {/* Página de login: mostrar solo ayuda */}
+          {path === "/login" ? (
+            <li>
+              <Link to="/ayuda" style={styles.link}>¿Necesitas ayuda?</Link>
+            </li>
           ) : (
-            <li><Link to="/ayuda" style={styles.link}>¿Necesitas ayuda?</Link></li>
+            <>
+              <li>
+                <Link to="/" style={styles.link}>Inicio</Link>
+              </li>
+              {rol === "empleador" && (
+                <>
+                  <li><Link to="/perfil" style={styles.link}>Perfil</Link></li>
+                  <li><Link to="/servicios" style={styles.link}>Servicios</Link></li>
+                  <li><Link to="/reservas" style={styles.link}>Reservas</Link></li>
+                </>
+              )}
+            </>
           )}
         </ul>
       </nav>
@@ -27,7 +38,7 @@ function Header() {
 
 const styles = {
   header: {
-    backgroundColor: "#004080",
+    backgroundColor: "#dd00ff09",
     color: "white",
     padding: "1rem 2rem",
     display: "flex",
@@ -37,10 +48,6 @@ const styles = {
   title: {
     margin: 0,
     fontSize: "1.5rem",
-  },
-  nav: {
-    display: "flex",
-    gap: "1rem",
   },
   navList: {
     display: "flex",

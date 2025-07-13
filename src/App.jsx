@@ -2,6 +2,7 @@ import "./index.css";
 import React, { useState } from "react";
 import Header from "./header.jsx";
 import Login from "./login.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -21,24 +22,30 @@ function App() {
     setRol(null);
   };
 
-  if (!isLoggedIn) {
-    return <Login onLogin={handleLogin} />;
-  }
-
   return (
-    <>
-      <header rol={rol} />
-      <div className="container">
-        <h1>Bienvenido a mi aplicación como {rol}</h1>
-        <MyButton />
-        <button className="btn" onClick={cerrarSesion}>Cerrar sesión</button>
-      </div>
-    </>
+    <BrowserRouter>
+      <Header rol={rol} />
+      <Routes>
+        <Route
+          path="/login"
+          element={<Login onLogin={handleLogin} />}
+        />
+        <Route
+          path="/"
+          element={
+            isLoggedIn ? (
+              <div className="container">
+                <h1>Bienvenido como {rol}</h1>
+                <button className="btn" onClick={cerrarSesion}>Cerrar sesión</button>
+              </div>
+            ) : (
+              <Login onLogin={handleLogin} />
+            )
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
-}
-
-function MyButton() {
-  return <button className="btn">Soy un botón</button>;
 }
 
 export default App;

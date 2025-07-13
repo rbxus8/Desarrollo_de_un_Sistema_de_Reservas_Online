@@ -1,8 +1,3 @@
-
--- Crear base de datos
-CREATE DATABASE IF NOT EXISTS hotel_reservas;
-USE hotel_reservas;
-
 -- Tabla usuarios
 CREATE TABLE usuarios (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
