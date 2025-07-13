@@ -7,7 +7,6 @@ Este proyecto consiste en el desarrollo de un sistema de reservas online enfocad
 ## 🎯 Objetivo
 
 Construir una aplicación web moderna, modular y funcional, que permita gestionar reservas, habitaciones y clientes.  
-> Esta versión **no incluye login**, lo que permite centrarse en la lógica principal del sistema y su integración entre frontend y backend.
 
 ---
 
@@ -73,82 +72,16 @@ cd sistema-reservas
 cd server
 npm install
 ```
-
+---
 3. Instala dependencias del frontend:
 
 ```bash
 cd ../client
 npm install
 ```
-
 ---
 
-## 🚀 Ejecución
-
-Inicia el backend:
-
-```bash
-cd server
-npm run dev
+//================construccion del proyecto===================//
 ```
-
-Inicia el frontend:
-
-```bash
-cd ../client
-npm run dev
+https://www.figma.com/design/MyTJq6mhkli0nJTazmtlKE/Desarrollo_de_un_Sistema_de_Reservas_Online?t=HMOqd1HZia3I1ZbR-1
 ```
-
-La aplicación se abrirá en:
-
-- Frontend → [http://localhost:5173](http://localhost:5173)
-- Backend API → [http://localhost:3000/api](http://localhost:3000/api)
-
----
-
-## 📦 Endpoints del backend (ejemplos)
-
-- `GET /api/reservas`
-- `POST /api/reservas`
-- `DELETE /api/reservas/:id`
-- `GET /api/habitaciones`
-- `POST /api/clientes`
-
----
-
-## 🧠 Ideas para ampliar
-
-- Agregar sistema de login para administración
-- Conexión con Firebase o autenticación JWT
-- Notificaciones por email al crear reservas
-- Calendario visual (react-calendar, fullcalendar)
-- Dashboard con estadísticas y gráficas
-- Exportación a PDF / Excel
-
----
-
-## 📸 Capturas de pantalla (recomendado)
-
-> Agrega aquí imágenes de la interfaz (dashboard, formulario de reserva, listado de habitaciones, etc.)
-
----
-
-## 🤝 Contribuciones
-
-¡Las contribuciones son bienvenidas!  
-Puedes hacerlo así:
-
-```bash
-1. Haz un fork del proyecto
-2. Crea una nueva rama: git checkout -b mejora-x
-3. Realiza tus cambios y haz commit
-4. Haz push a tu rama: git push origin mejora-x
-5. Abre un Pull Request
-```
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT.  
-Desarrollado por [Tu Nombre].
