@@ -19,22 +19,10 @@ MongoDB / MySQL	Base de datos (a elección)
 Axios / Fetch	Comunicación HTTP
 📁 Estructura del proyecto
 
-sistema-reservas/
-├── client/                  # Frontend (React + Vite)
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/        # Conexión a la API
-│   │   └── App.jsx
-│   └── vite.config.js
-├── server/                  # Backend (Node.js + Express)
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── config/
-│   └── index.js
-├── package.json
-└── README.md
+
+<img width="538" height="396" alt="image" src="https://github.com/user-attachments/assets/dd01a6ea-e285-4731-b3c9-5be8472647ac" />
+
+
 
 ⚙️ Instalación
 1. Clona el repositorio:
