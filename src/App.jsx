@@ -1,51 +1,23 @@
-import "./index.css";
-import React, { useState } from "react";
-import Header from "./header.jsx";
-import Login from "./login.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom'
+import Header from './Header.jsx'
+import Footer from './Footer.jsx'
+
+import Inicio from './pages/Inicio.jsx'
+import Contacto from './pages/Contacto.jsx'
+import Acerca from './pages/Acerca.jsx'
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [rol, setRol] = useState(null);
-
-  const handleLogin = (rolSeleccionado) => {
-    if (rolSeleccionado === "empleador") {
-      setIsLoggedIn(true);
-      setRol(rolSeleccionado);
-    } else {
-      alert("Acceso denegado. Solo empleadores pueden entrar.");
-    }
-  };
-
-  const cerrarSesion = () => {
-    setIsLoggedIn(false);
-    setRol(null);
-  };
-
   return (
-    <BrowserRouter>
-      <Header rol={rol} />
+    <>
+      <Header />
       <Routes>
-        <Route
-          path="/login"
-          element={<Login onLogin={handleLogin} />}
-        />
-        <Route
-          path="/"
-          element={
-            isLoggedIn ? (
-              <div className="container">
-                <h1>Bienvenido como {rol}</h1>
-                <button className="btn" onClick={cerrarSesion}>Cerrar sesión</button>
-              </div>
-            ) : (
-              <Login onLogin={handleLogin} />
-            )
-          }
-        />
+        <Route path="/" element={<Inicio />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/acerca" element={<Acerca />} />
       </Routes>
-    </BrowserRouter>
-  );
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
