@@ -1,4 +1,4 @@
-# 🛏️ *Sistema de Reservas Online (React + Node.js)*
+# 🛏️ *Sistema de Reservas Online (React + Vite + Node.js)*
 
 Este proyecto consiste en el desarrollo de un sistema de reservas online enfocado en negocios como hoteles, hostales, consultorios o servicios que requieren agendar reservas o citas a través de internet. El sistema está dividido en dos partes: **frontend con React** y **backend con Node.js + Express**, comunicándose mediante una API REST.
 
