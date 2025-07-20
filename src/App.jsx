@@ -1,10 +1,10 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./header.jsx";
 import Footer from "./Footer.jsx";
 
 import Inicio from "./pages/Inicio.jsx";
 import Contacto from "./pages/Contacto.jsx";
-import Acerca from "./pages/Acerca.jsx";
+import Habitaciones from "./pages/Habitaciones.jsx";
 
 function App() {
   return (
@@ -13,8 +13,9 @@ function App() {
       <Routes>
         <Route path="/Inicio" element={<Inicio />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/acerca" element={<Acerca />} />
+        <Route path="/Habitaciones" element={<Habitaciones />} />
       </Routes>
+
       <Footer />
     </>
   );
