@@ -37,7 +37,7 @@ function Header() {
             </Link>
             <Link
               className="hover:outline-2 outline-offset-1 hover:text-black-50 p-1"
-              to="/servicios"
+              to="/Servicios"
             >
               Servicios
             </Link>
