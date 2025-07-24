@@ -7,7 +7,7 @@ function Inicio() {
   return (
     <main>
       {/* Hero principal */}
-      <section className="bg-pink-500 h-130">
+      <section className="bg-pink-500 h-100">
         <Swiper
           className="h-full"
           modules={[Autoplay]}
