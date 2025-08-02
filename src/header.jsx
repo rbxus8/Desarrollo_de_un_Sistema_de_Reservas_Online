@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 function Header() {
-  
-
   return (
     <header className="h-28 border">
       <div className="h-28 grid grid-cols-[1fr_2fr] grid-rows-1 p-5 items-center">
@@ -13,9 +11,14 @@ function Header() {
         <div className="text-end gap-4 flex flex-col">
           <div className="flex justify-end gap-4">
             {/* Selector de Cuenta*/}
-            <select name="usuario" id="usuarios">
-              <option value="user1">Iniciar Sesion</option>
-            </select>
+            <Link
+              className="border cursor-pointer p-1 hover:bg-gray-200"
+              name="usuario"
+              id="usuarios"
+              to="/Login"
+            >
+              Iniciar Sesion
+            </Link>
             {/* Selector de idioma */}
             <select
               className="border cursor-pointer"

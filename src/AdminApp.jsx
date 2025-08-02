@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import AdminDashboard from "./pages/Admin/AdminDashboard.jsx";
-import AdminUsuarios from "./pages/Admin/AdminUsuarios.jsx";
-import AdminReservas from "./pages/Admin/AdminReservas.jsx";
+import AdminDashboard from "./pagesAdmin/AdminDashboard.jsx";
+import AdminUsuarios from "./pagesAdmin/AdminUsuarios.jsx";
+import AdminReservas from "./pagesAdmin/AdminReservas.jsx";
 
 function AdminApp() {
   return (

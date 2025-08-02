@@ -1,30 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./header.jsx";
-import Footer from "./Footer.jsx";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import User from "./User.jsx";
 
-import Inicio from "./pages/Inicio.jsx";
-import Contacto from "./pages/Contacto.jsx";
-import Habitaciones from "./pages/Habitaciones.jsx";
-import Servicios from "./pages/Servicios.jsx";
-import Reservas from "./pages/Reservas.jsx";
-import Galeria from "./pages/Galeria.jsx";
-
-function App() {
-  return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/Inicio" element={<Inicio />} />
-        <Route path="/Habitaciones" element={<Habitaciones />} />
-        <Route path="/servicios" element={<Servicios />} />
-        <Route path="/Reservas" element={<Reservas />} />
-        <Route path="/Galeria" element={<Galeria />} />
-        <Route path="/contacto" element={<Contacto />} />
-      </Routes>
-
-      <Footer />
-    </>
-  );
-}
-
-export default App;
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <User />
+    </BrowserRouter>
+  </React.StrictMode>
+);
