@@ -9,32 +9,41 @@ const secciones = [
     titulo: "Habitaciones",
     descripcion: "Confort y elegancia en cada detalle.",
     imagenes: [
-      { src: "/img/habitacion.jpg", alt: "Suite principal" },
-      { src: "/img/habitacion-estandar-twin.jpg", alt: "Habitación Twin" },
       {
-        src: "/img/NH_Coimbra_Dona_Inês_Room_Standard_River_View_General.jpg",
+        src: "src/assets/Buenos-Aires-Gran-Brizo-dormitorio-768x567.jpg",
+        alt: "Suite principal",
+      },
+      {
+        src: "src/assets/habitacion-estandar-twin.jpg",
+        alt: "Habitación Twin",
+      },
+      {
+        src: "src/assets/HabitaciónconVistaalMar.jpg  ",
         alt: "Vista al río",
       },
-      { src: "/img/habitacion-familiar.jpg", alt: "Habitación Familiar" },
+      {
+        src: "src/assets/HabitaciónEcoFriendly.avif",
+        alt: "Habitación Familiar",
+      },
     ],
   },
   {
     titulo: "Áreas Comunes",
     descripcion: "Espacios diseñados para el relax y la convivencia.",
     imagenes: [
-      { src: "/img/lobby.jpg", alt: "Lobby moderno" },
-      { src: "/img/gym.jpg", alt: "Gimnasio equipado" },
-      { src: "/img/spa.jpg", alt: "Spa de lujo" },
-      { src: "/img/bar.jpg", alt: "Bar con terraza" },
+      { src: "src/assets/zonacomun.webp", alt: "Lobby moderno" },
+      { src: "src/assets/gimnasio.jpg", alt: "Gimnasio equipado" },
+      { src: "src/assets/spa.jpg", alt: "Spa de lujo" },
+      { src: "src/assets/restaurante.jpg", alt: "Bar con terraza" },
     ],
   },
   {
     titulo: "Eventos",
     descripcion: "Salones adaptables para bodas, reuniones y más.",
     imagenes: [
-      { src: "/img/eventos.jpg", alt: "Evento corporativo" },
-      { src: "/img/evento-social.jpg", alt: "Boda en jardín" },
-      { src: "/img/conferencia.jpg", alt: "Salón de conferencias" },
+      { src: "src/assets/Eventos.jpg", alt: "Evento corporativo" },
+      { src: "src/assets/BodasyCelebraciones.jpg", alt: "Boda en jardín" },
+      { src: "src/assets/NochesTemáticas.webp", alt: "Salón de conferencias" },
     ],
   },
   {
@@ -51,7 +60,7 @@ const secciones = [
 function Galeria() {
   return (
     <main className="px-4 py-20 max-w-7xl mx-auto space-y-24">
-      <h2 className="text-center font-serif text-4xl mb-10">
+      <h2 className="font-serif text-4xl mb-3 font-bold text-center mb-12">
         Galería de Espacios
       </h2>
 

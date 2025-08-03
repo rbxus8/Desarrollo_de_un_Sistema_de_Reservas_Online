@@ -10,21 +10,43 @@ function Habitaciones() {
       descripcionCorta: "Vista panorámica, jacuzzi privado, servicio premium",
       descripcionLarga:
         "Nuestra suite más exclusiva con amplios ventanales, sala de estar independiente, jacuzzi privado y acceso a servicios VIP. Ideal para quienes buscan lujo total.",
-      imagen: "/img/Buenos-Aires-Gran-Brizo-dormitorio-768x567.jpg",
+      imagen: "src/assets/Buenos-Aires-Gran-Brizo-dormitorio-768x567.jpg",
     },
     {
       nombre: "🛏️ Habitación Doble Deluxe",
       descripcionCorta: "Moderna, espaciosa y elegante",
       descripcionLarga:
         "Perfecta para parejas o amigos, esta habitación ofrece dos camas cómodas, decoración moderna, baño privado y excelente iluminación natural.",
-      imagen: "/img/habitacion-estandar-twin.jpg",
+      imagen: "src/assets/habitacion-estandar-twin.jpg",
     },
     {
-      nombre: "👨‍👩‍👧 Familiar",
+      nombre: "👨‍👩‍👧 Habitación Familiar",
       descripcionCorta: "Amplia y cómoda para toda la familia",
       descripcionLarga:
         "Equipada con camas múltiples, zona de juegos, minibar y espacio para compartir en familia. Ideal para una estadía relajada con niños.",
-      imagen: "/img/NH_Coimbra_Dona_Inês_Room_Standard_River_View_General.jpg",
+      imagen:
+        "src/assets/NH_Coimbra_Dona_Inês_Room_Standard_River_View_General.jpg",
+    },
+    {
+      nombre: "💼 Habitación Ejecutiva",
+      descripcionCorta: "Ideal para viajeros de negocios",
+      descripcionLarga:
+        "Diseñada para comodidad y productividad. Cuenta con escritorio, buena iluminación, Wi-Fi de alta velocidad y acceso a salas de reuniones.",
+      imagen: "src/assets/habitacionaejecutiva.jpg",
+    },
+    {
+      nombre: "🌅 Habitación con Vista al Mar",
+      descripcionCorta: "Relájate con una vista impresionante",
+      descripcionLarga:
+        "Habitación con balcón privado y vista directa al mar. Incluye aire acondicionado, cama king y desayuno frente al mar.",
+      imagen: "src/assets/HabitaciónconVistaalMar.jpg",
+    },
+    {
+      nombre: "🌿 Habitación Eco Friendly",
+      descripcionCorta: "Sostenible y confortable",
+      descripcionLarga:
+        "Espacio diseñado con materiales ecológicos, energía solar, ambientación natural y productos biodegradables para una estadía responsable.",
+      imagen: "src/assets/HabitaciónEcoFriendly.avif",
     },
   ];
 
@@ -41,10 +63,13 @@ function Habitaciones() {
   return (
     <main className="min-h-screen bg-white px-6 py-20">
       <div className="text-center mb-12">
-        <h1 className="font-serif text-4xl text-gray-900 mb-4">Nuestras Habitaciones</h1>
+        <h1 className="font-serif text-4xl mb-3 font-bold">
+          Nuestras Habitaciones
+        </h1>
         <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-          Contamos con habitaciones diseñadas para todo tipo de viajeros: desde suites de lujo hasta opciones familiares,
-          todas equipadas para ofrecerte una experiencia cómoda, segura y memorable.
+          Contamos con habitaciones diseñadas para todo tipo de viajeros: desde
+          suites de lujo hasta opciones familiares, todas equipadas para
+          ofrecerte una experiencia cómoda, segura y memorable.
         </p>
       </div>
 
@@ -59,8 +84,12 @@ function Habitaciones() {
               style={{ backgroundImage: `url(${hab.imagen})` }}
             ></div>
             <div className="p-6 flex flex-col justify-between flex-grow">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{hab.nombre}</h3>
-              <p className="text-sm text-gray-500 mb-2">{hab.descripcionCorta}</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {hab.nombre}
+              </h3>
+              <p className="text-sm text-gray-500 mb-2">
+                {hab.descripcionCorta}
+              </p>
               <p className="text-gray-700 text-sm mb-4 line-clamp-2">
                 {hab.descripcionLarga}
               </p>
@@ -85,8 +114,12 @@ function Habitaciones() {
             >
               &times;
             </button>
-            <h3 className="text-xl font-semibold mb-2">{habitacionSeleccionada.nombre}</h3>
-            <p className="text-gray-700 mb-4">{habitacionSeleccionada.descripcionLarga}</p>
+            <h3 className="text-xl font-semibold mb-2">
+              {habitacionSeleccionada.nombre}
+            </h3>
+            <p className="text-gray-700 mb-4">
+              {habitacionSeleccionada.descripcionLarga}
+            </p>
             <img
               src={habitacionSeleccionada.imagen}
               alt={habitacionSeleccionada.nombre}

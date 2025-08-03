@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
+
 import "swiper/css";
 import "swiper/css/autoplay";
 
@@ -7,7 +9,7 @@ function Inicio() {
   return (
     <main>
       {/* Hero principal */}
-      <section className="bg-pink-500 h-150">
+      <section className="bg-pink-500 h-200">
         <Swiper
           className="h-full"
           modules={[Autoplay]}
@@ -54,19 +56,19 @@ function Inicio() {
           necesitas para una estancia inolvidable.
         </p>
         <ul className=" flex flex-wrap justify-center gap-6">
-          <li className="shadow-xl cursor-pointer flex items-end w-[400px] h-60 rounded-xl bg-[url('src/assets/Buenos-Aires-Gran-Brizo-dormitorio-768x567.jpg')] bg-cover bg-center overflow-hidden">
+          <li className="shadow-xl cursor-pointer flex items-end w-[400px] h-70 rounded-xl bg-[url('src/assets/Buenos-Aires-Gran-Brizo-dormitorio-768x567.jpg')] bg-cover bg-center overflow-hidden">
             <p className="bg-black/70 text-white text-sm p-2 w-full text-left rounded-b-lg">
               🛌 Suite Presidencial – Vista panorámica, jacuzzi privado,
               servicio premium
             </p>
           </li>
-          <li className="shadow-xl cursor-pointer flex items-end w-[400px] h-60 rounded-xl bg-[url('src/assets/habitacion-estandar-twin.jpg')] bg-cover bg-center overflow-hidden">
+          <li className="shadow-xl cursor-pointer flex items-end w-[400px] h-70 rounded-xl bg-[url('src/assets/habitacion-estandar-twin.jpg')] bg-cover bg-center overflow-hidden">
             <p className="bg-black/70 text-white text-sm p-2 w-full text-left rounded-b-lg">
               🛏️ Habitación Doble Deluxe – Espaciosa, con diseño moderno y
               elegante
             </p>
           </li>
-          <li className="shadow-xl cursor-pointer flex items-end w-[400px] h-60 rounded-xl bg-[url('src/assets/NH_Coimbra_Dona_Inês_Room_Standard_River_View_General.jpg')] bg-cover bg-center overflow-hidden">
+          <li className="shadow-xl cursor-pointer flex items-end w-[400px] h-70 rounded-xl bg-[url('src/assets/NH_Coimbra_Dona_Inês_Room_Standard_River_View_General.jpg')] bg-cover bg-center overflow-hidden">
             <p className="bg-black/70 text-white text-sm p-2 w-full text-left rounded-b-lg">
               👨‍👩‍👧 Familiar – Perfecta para familias, con zonas de entretenimiento
             </p>
@@ -195,10 +197,16 @@ function Inicio() {
 
       {/* Contacto */}
       <section className="text-center px-4 pb-20">
-        <h2 className="font-serif text-3xl mb-3 font-bold">Contáctanos</h2>
+        <h2 className="font-serif text-3xl mb-3 font-bold ">Contáctanos</h2>
         <p>📞 Teléfono: +57 300 123 4567</p>
         <p>📧 Correo: reservas@grandestinohotel.com</p>
         <p>📍 Dirección: Cra. 10 #25-50, Bogotá, Colombia</p>
+        <Link
+          to="/Reservas"
+          className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+        >
+          Escribenos
+        </Link>
       </section>
     </main>
   );
