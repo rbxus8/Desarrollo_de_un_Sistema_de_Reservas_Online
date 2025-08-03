@@ -17,6 +17,7 @@ function Main() {
       <Header />
       <Routes>
         <Route path="/" element={<Inicio />} />
+        <Route path="Inicio" element={<Inicio />} />
         <Route path="/Habitaciones" element={<Habitaciones />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/Reservas" element={<Reservas />} />

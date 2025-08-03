@@ -6,7 +6,7 @@ function Header() {
     <header className="h-28 border">
       <div className="h-28 grid grid-cols-[1fr_2fr] grid-rows-1 p-5 items-center">
         <a href="#">
-          <h1 className="font-serif text-3xl">GranDestino</h1>
+          <h1 className="font-serif text-3xl ">GranDestino</h1>
         </a>
         <div className="text-end gap-4 flex flex-col">
           <div className="flex justify-end gap-4">
