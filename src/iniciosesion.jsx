@@ -2,7 +2,6 @@ import React from "react";
 import Registrarse from "./Registrarse";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-
 function iniciosesion() {
   return (
     <>

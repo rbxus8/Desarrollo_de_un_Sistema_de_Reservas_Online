@@ -1,6 +1,5 @@
 import React from "react";
 import Iniciosesion from "./iniciosesion.jsx";
-import Registrarse from "./Registrarse.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function Login() {
@@ -14,7 +13,6 @@ function Login() {
       <main className="bg-black w-full h-screen flex items-center justify-center">
         <Routes>
           <Route path="/" element={<Iniciosesion />} />
-          <Route path="/Registrarse" element={<Registrarse />} />
         </Routes>
       </main>
       <footer className="h-20 border w-full flex items-center justify-center">

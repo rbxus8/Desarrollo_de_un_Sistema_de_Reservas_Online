@@ -21,3 +21,6 @@ if ($conexion_exitosa) {
 } else {
   echo "❌ Error al conectar con la base de datos";
 }
+
+
+?>
