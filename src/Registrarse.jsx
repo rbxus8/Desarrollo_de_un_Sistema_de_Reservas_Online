@@ -49,13 +49,6 @@ function Registrarse() {
               className="border p-2 rounded w-full mb-4"
             />
             <input
-              type="password"
-              name="password_confirmar"
-              id="password_confirmar"
-              placeholder="Confirmar Contraseña"
-              className="border p-2 rounded w-full mb-4"
-            />
-            <input
               type="button"
               value="Registrarse"
               className="w-50 bg-blue-500 text-white p-2 rounded mb-1 cursor-pointer"
