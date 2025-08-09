@@ -21,10 +21,10 @@ function Registrarse() {
               className="border p-2 rounded w-full mb-4"
             />
             <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Correo Electrónico"
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Apellido"
               className="border p-2 rounded w-full mb-4"
             />
             <input
@@ -32,6 +32,13 @@ function Registrarse() {
               name="telefono"
               id="telefono"
               placeholder="Teléfono"
+              className="border p-2 rounded w-full mb-4"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo Electrónico"
               className="border p-2 rounded w-full mb-4"
             />
             <input
@@ -57,9 +64,7 @@ function Registrarse() {
         </div>
       </main>
       <footer className="h-20 border w-full flex items-center justify-center">
-        <p className="text-center">
-          © 2023 GranDestino. All rights reserved.
-        </p>
+        <p className="text-center">© 2023 GranDestino. All rights reserved.</p>
       </footer>
     </>
   );
