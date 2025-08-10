@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$dbname = "mi_db";
+$dbname = "resrvas_hotel";
 $username = "root";
 $password = "";
 
