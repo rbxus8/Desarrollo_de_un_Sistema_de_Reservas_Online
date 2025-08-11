@@ -3,7 +3,7 @@ $host = 'db.lomxjlomykxdkodruqjm.supabase.co';
 $port = '5432';
 $dbname = 'postgres';
 $user = 'postgres';
-$password = 'Supercarrera.8'; // Reemplaza con tu contraseña real
+$password = ''; // Reemplaza con tu contraseña real
 
 try {
   $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;";
