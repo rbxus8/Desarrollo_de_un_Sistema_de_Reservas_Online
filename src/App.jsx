@@ -5,7 +5,7 @@ import User from "./User.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Desarrollo_de_un_Sistema_de_Reservas_Online">
       <User />
     </BrowserRouter>
   </React.StrictMode>
