@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0;url=./index.html">
+  </head>
+  <body>
+    <script>
+      // Redirige preservando la ruta después del repo
+      var path = window.location.pathname;
+      var newUrl = window.location.origin + '/Desarrollo_de_un_Sistema_de_Reservas_Online' + '/index.html' + window.location.search + window.location.hash;
+      window.location.replace(newUrl);
+    </script>
+  </body>
+</html>
