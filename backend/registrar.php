@@ -1,8 +1,8 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type");
-header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *"); // Permite solicitudes desde cualquier origen
+header("Access-Control-Allow-Methods: POST, OPTIONS"); // Permite métodos POST y OPTIONS
+header("Access-Control-Allow-Headers: Content-Type"); // Permite encabezados Content-Type
+header("Content-Type: application/json"); // Respuesta en formato JSON
 
 if ($_SERVER["REQUEST_METHOD"] === "OPTIONS") {
     http_response_code(200);
