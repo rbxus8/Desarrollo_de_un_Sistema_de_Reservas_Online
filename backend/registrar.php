@@ -9,7 +9,7 @@ include 'Conexion.php';
 $data = json_decode(file_get_contents("php://input"), true);
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    if (!isset($data["nombre"]) || !isset($data["email"]) || !isset($data["telefono"]) || !isset($data["contrasena"])) {
+    if (!isset($data["nombre"]) || !isset($data["apellido"]) || !isset($data["email"]) || !isset($data["telefono"]) || !isset($data["contrasena"])) {
         echo json_encode(["error" => "Faltan datos requeridos"]);
         exit;
     }
