@@ -1,6 +1,10 @@
 {
   "name": "hotelsjuli",
+<<<<<<< HEAD
   "homepage": "https://github.com/rbxus8/Desarrollo_de_un_Sistema_de_Reservas_Online",
+=======
+  "homepage": "https://rbxus8.github.io/Desarrollo_de_un_Sistema_de_Reservas_Online",
+>>>>>>> parent of a6e7532 (feat: error 404)
   "private": true,
   "version": "0.0.0",
   "type": "module",
